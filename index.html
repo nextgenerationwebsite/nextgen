@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen Enrichment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo logo-text">NEXT GEN</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Lessons</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO — animates on page load -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label hero-animate">Welcome to NextGen Enrichment</p>
+      <h1 class="hero-title hero-animate">
+        <!-- PASTE YOUR HEADLINE HERE -->
+        Inspiring Kids Through<br />Music &amp; Sports
+      </h1>
+      <p class="hero-sub hero-animate">
+        <!-- PASTE YOUR SUBHEADING HERE -->
+        
+
+      </p>
+      <div class="hero-actions hero-animate">
+        <a href="#programs" class="btn btn-primary">Explore Programs</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-image-box hero-animate">
+      <img src="EE4B208A-E475-4D7D-9A48-B41B88C907E3.PNG" alt="NextGen Enrichment" class="hero-logo-img" />
+    </div>
+  </section>
+
+  <!-- ABOUT — image slides from left, text from right -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-image-box animate-right">
+        <img src="about.jpeg" alt="Child learning and growing with NextGen Enrichment" />
+      </div>
+      <div class="about-text animate-left">
+        <p class="section-label">Who We Are</p>
+        <h2>About NextGen Enrichment</h2>
+        <p>
+          <!-- PASTE YOUR ABOUT TEXT HERE -->
+          Next Gen Enrichment empowers children through sports and music while supporting San Diego organizations that serve underserved youth. Donations help give more kids the opportunity to play, create, and grow.
+
+        </p>
+        <p>
+          <!-- PASTE ADDITIONAL ABOUT TEXT HERE -->
+        
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS — heading fades up, cards stagger in -->
+  <section class="programs" id="programs">
+    <div class="container container-center">
+      <p class="section-label animate-up">What We Offer</p>
+      <h2 class="animate-up delay-1">Lessons</h2>
+      <div class="programs-grid">
+
+        <!-- MUSIC CARD -->
+        <div class="program-card animate-up delay-2">
+          <div class="program-icon">♪</div>
+          <img src="music.jpg" alt="Music Program" />
+          <h3>Music</h3>
+          <p>
+            <!-- PASTE MUSIC PROGRAM DESCRIPTION HERE -->
+            Piano,
+            Cello,
+            Guitar
+          </p>
+          <a href="#contact" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <!-- SPORTS CARD -->
+        <div class="program-card animate-up delay-3">
+          <div class="program-icon">🏓</div>
+          <img src="sports.jpg" alt="Sports Program" />
+          <h3>Sports</h3>
+          <p>
+            <!-- PASTE SPORTS PROGRAM DESCRIPTION HERE -->
+            Swimming,
+            Tennis,
+            Ping pong
+          </p>
+          <a href="#contact" class="btn btn-outline">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS — each number scales in and counts up -->
+  <!-- <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item animate-scale delay-1">
+        <span class="stat-number" data-count="0">—</span>
+        Set data-count="50" to animate to 50, data-suffix="+" for e.g. "50+" 
+        <span class="stat-label">Programs Offered</span>
+      </div>
+      <div class="stat-item animate-scale delay-2">
+        <span class="stat-number" data-count="0">—</span>
+        <span class="stat-label">Years Running</span>
+      </div>
+      <div class="stat-item animate-scale delay-3">
+        <span class="stat-number" data-count="0">—</span>
+        <span class="stat-label">Coaches &amp; Instructors</span>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- INSTRUCTORS — cards stagger in -->
+  <section class="instructors" id="instructors">
+    <div class="container container-center">
+      <h2 class="animate-up">Meet the Team</h2>
+      <div class="instructors-grid">
+
+        <!-- INSTRUCTOR 1 -->
+        <div class="instructor-card animate-up delay-2">
+          <h3>Ahaan Pandey</h3>
+          <p class="instructor-role">Founder &amp; CEO</p>
+          <div class="instructor-img">
+            <img src="instructor1.avif" alt="Ahaan" />
+          </div>
+          <div class="instructor-about">
+            <p class="instructor-about-label">About</p>
+            <p>Ahaan teaches guitar and enjoys helping kids grow in confidence, creativity, and teamwork. Outside of the nonprofit, he loves playing basketball and spending time at the beach.</p>
+          </div>
+        </div>
+
+        <!-- INSTRUCTOR 2 -->
+        <div class="instructor-card animate-up delay-3">
+          <h3>Kai Hattangadi</h3>
+          <p class="instructor-role">Co-Founder &amp; COO</p>
+          <div class="instructor-img">
+            <img src="instructor2.avif" alt="Kai" />
+          </div>
+          <div class="instructor-about">
+            <p class="instructor-about-label">About</p>
+            <p>Kai teaches piano and tennis. In his free time, he enjoys socializing by swimming and playing tennis, which keep him active and energized.</p>
+          </div>
+        </div>
+
+        <!-- INSTRUCTOR 3 -->
+        <div class="instructor-card animate-up delay-4">
+          <h3>Harsha Gurappadi</h3>
+          <p class="instructor-role">Co-Founder &amp; CMO</p>
+          <div class="instructor-img">
+            <img src="instructor3.avif" alt="Harsha" />
+          </div>
+          <div class="instructor-about">
+            <p class="instructor-about-label">About</p>
+            <p>Harsha helps with marketing, money & website management. Outside of the nonprofit, he likes spending time with family & friends.
+</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT — info slides from left, form from right -->
+  <section class="contact" id="contact">
+    <div class="container container-center">
+      <p class="section-label animate-up">Reach Out</p>
+      <h2 class="animate-up delay-1">Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info animate-right">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p><!-- PASTE ADDRESS HERE --></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info.nextgenenrichment@gmail.com">info.nextgenenrichment@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><!-- PASTE PHONE NUMBER --></p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form animate-left">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Contact us! include what you would like to learn and any questions you may have." required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <a href="#" class="logo logo-text">NEXT GEN</a>
+      </div>
+      <p class="footer-tagline">Inspire &bull; Play &bull; Grow</p>
+      <p class="footer-copy">
+        &copy; 2026 NextGen Enrichment. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <!-- Add social links here -->
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
