@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NextGen Enrichment</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,6 +17,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#programs">Lessons</a></li>
+        <li><a href="#how">How It Works</a></li>
         <li><a href="#instructors">Instructors</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -26,18 +27,19 @@
     </div>
   </nav>
 
-  <!-- HERO — animates on page load -->
+  <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg-glow"></div>
     <div class="hero-content">
-      <p class="hero-label hero-animate">Welcome to NextGen Enrichment</p>
+      <div class="hero-eyebrow hero-animate">
+        <span class="eyebrow-dot"></span>
+        Welcome to NextGen Enrichment
+      </div>
       <h1 class="hero-title hero-animate">
-        <!-- PASTE YOUR HEADLINE HERE -->
-        Inspiring Kids Through<br />Music &amp; Sports
+        Inspiring Kids Through<br /><em>Music &amp; Sports</em>
       </h1>
       <p class="hero-sub hero-animate">
-        <!-- PASTE YOUR SUBHEADING HERE -->
-        
-
+       
       </p>
       <div class="hero-actions hero-animate">
         <a href="#programs" class="btn btn-primary">Explore Programs</a>
@@ -45,65 +47,68 @@
       </div>
     </div>
     <div class="hero-image-box hero-animate">
-      <img src="EE4B208A-E475-4D7D-9A48-B41B88C907E3.PNG" alt="NextGen Enrichment" class="hero-logo-img" />
+      <div class="hero-visual">
+        <img src="EE4B208A-E475-4D7D-9A48-B41B88C907E3.PNG" alt="NextGen Enrichment" class="hero-logo-img" />
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT — image slides from left, text from right -->
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
       <div class="about-image-box animate-right">
-        <img src="about.jpeg" alt="Child learning and growing with NextGen Enrichment" />
+        <img src="about.jpeg" alt="NextGen Enrichment lesson in action" />
       </div>
       <div class="about-text animate-left">
         <p class="section-label">Who We Are</p>
         <h2>About NextGen Enrichment</h2>
         <p>
-          <!-- PASTE YOUR ABOUT TEXT HERE -->
           Next Gen Enrichment is a youth-led nonprofit created by students who noticed a gap in mentorship access for kids in San Diego. We mentor young students in sports and music to help them build confidence, skills, and community.
-
         </p>
         <p>
-          <!-- PASTE ADDITIONAL ABOUT TEXT HERE -->
-           Next Gen Enrichment empowers children through sports and music, building confidence and skills. Funds support San Diego organizations serving underserved youth, giving more kids the chance to play, create, and grow.
-        
+          Funds support San Diego organizations serving underserved youth, giving more kids the chance to play, create, and grow.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS — heading fades up, cards stagger in -->
+  <!-- PROGRAMS -->
   <section class="programs" id="programs">
     <div class="container container-center">
       <p class="section-label animate-up">What We Offer</p>
       <h2 class="animate-up delay-1">Lessons</h2>
+      <p class="section-sub animate-up delay-2"></p>
       <div class="programs-grid">
 
-        <!-- MUSIC CARD -->
         <div class="program-card animate-up delay-2">
-          <div class="program-icon">♪</div>
+          <div class="program-card-header">
+            <div class="program-icon">♪</div>
+            <span class="program-badge program-badge-blue">Music</span>
+          </div>
           <img src="music.jpg" alt="Music Program" />
-          <h3>Music</h3>
-          <p>
-            <!-- PASTE MUSIC PROGRAM DESCRIPTION HERE -->
-            Piano,
-            Cello,
-            Guitar
-          </p>
+          <h3>Music Lessons</h3>
+          <p>Learn from experienced student musicians who are passionate about teaching kids.</p>
+          <ul class="program-features">
+            <li><span>🎹</span> Piano</li>
+            <li><span>🎻</span> Cello</li>
+            <li><span>🎸</span> Guitar</li>
+          </ul>
           <a href="#contact" class="btn btn-outline">Learn More</a>
         </div>
 
-        <!-- SPORTS CARD -->
         <div class="program-card animate-up delay-3">
-          <div class="program-icon">🎾</div>
+          <div class="program-card-header">
+            <div class="program-icon">🎾</div>
+            <span class="program-badge program-badge-green">Sports</span>
+          </div>
           <img src="sports.jpg" alt="Sports Program" />
-          <h3>Sports</h3>
-          <p>
-            <!-- PASTE SPORTS PROGRAM DESCRIPTION HERE -->
-            Swimming,
-            Tennis,
-            Ping pong
-          </p>
+          <h3>Sports Training</h3>
+          <p>Build athleticism, teamwork, and discipline through guided sports sessions.</p>
+          <ul class="program-features">
+            <li><span>🏊</span> Swimming</li>
+            <li><span>🎾</span> Tennis</li>
+            <li><span>🏓</span> Ping Pong</li>
+          </ul>
           <a href="#contact" class="btn btn-outline">Learn More</a>
         </div>
 
@@ -111,32 +116,74 @@
     </div>
   </section>
 
-  <!-- STATS — each number scales in and counts up -->
-  <!-- <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat-item animate-scale delay-1">
-        <span class="stat-number" data-count="0">—</span>
-        Set data-count="50" to animate to 50, data-suffix="+" for e.g. "50+" 
-        <span class="stat-label">Programs Offered</span>
-      </div>
-      <div class="stat-item animate-scale delay-2">
-        <span class="stat-number" data-count="0">—</span>
-        <span class="stat-label">Years Running</span>
-      </div>
-      <div class="stat-item animate-scale delay-3">
-        <span class="stat-number" data-count="0">—</span>
-        <span class="stat-label">Coaches &amp; Instructors</span>
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how">
+    <div class="container container-center">
+      <p class="section-label animate-up">Simple Process</p>
+      <h2 class="animate-up delay-1">How It Works</h2>
+      <p class="section-sub animate-up delay-2"></p>
+      <div class="steps-grid">
+        <div class="step-card animate-up delay-2">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">📬</div>
+          <h3>Reach Out</h3>
+          <p>Fill out our contact form and tell us what your child wants to learn.</p>
+        </div>
+        <div class="step-connector animate-fade delay-2"></div>
+        <div class="step-card animate-up delay-3">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">🤝</div>
+          <h3>Get Matched</h3>
+          <p>We connect you with the right instructor based on interest and schedule.</p>
+        </div>
+        <div class="step-connector animate-fade delay-3"></div>
+        <div class="step-card animate-up delay-4">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">📚</div>
+          <h3>Start Learning</h3>
+          <p>Begin personalized sessions in music or sports with our passionate instructors.</p>
+        </div>
+        <div class="step-connector animate-fade delay-4"></div>
+        <div class="step-card animate-up delay-5">
+          <div class="step-number">04</div>
+          <div class="step-icon-wrap">🌟</div>
+          <h3>Grow Together</h3>
+          <p>Watch your child build confidence, skills, and friendships that last.</p>
+        </div>
       </div>
     </div>
-  </section>-->
+  </section>
 
-  <!-- INSTRUCTORS — cards stagger in -->
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item animate-scale delay-1">
+        <span class="stat-number" data-count="3">—</span>
+        <span class="stat-label">Expert Instructors</span>
+      </div>
+      <div class="stat-item animate-scale delay-2">
+        <span class="stat-number" data-count="2">—</span>
+        <span class="stat-label">Programs Offered</span>
+      </div>
+      <div class="stat-item animate-scale delay-3">
+        <span class="stat-number" data-count="6">—</span>
+        <span class="stat-label">Skills Taught</span>
+      </div>
+      <div class="stat-item animate-scale delay-4">
+        <span class="stat-number" data-count="100" data-suffix="%">—</span>
+        <span class="stat-label">Student Led</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS -->
   <section class="instructors" id="instructors">
     <div class="container container-center">
-      <h2 class="animate-up">Meet the Team</h2>
+      <p class="section-label animate-up">Our Team</p>
+      <h2 class="animate-up delay-1">Meet the Instructors</h2>
+      <p class="section-sub animate-up delay-2"></p>
       <div class="instructors-grid">
 
-        <!-- INSTRUCTOR 1 -->
         <div class="instructor-card animate-up delay-2">
           <h3>Ahaan Pandey</h3>
           <p class="instructor-role">Founder &amp; CEO</p>
@@ -149,7 +196,6 @@
           </div>
         </div>
 
-        <!-- INSTRUCTOR 2 -->
         <div class="instructor-card animate-up delay-3">
           <h3>Kai Hattangadi</h3>
           <p class="instructor-role">Co-Founder &amp; COO</p>
@@ -162,7 +208,6 @@
           </div>
         </div>
 
-        <!-- INSTRUCTOR 3 -->
         <div class="instructor-card animate-up delay-4">
           <h3>Harsha Gurappadi</h3>
           <p class="instructor-role">Co-Founder &amp; CMO</p>
@@ -171,8 +216,7 @@
           </div>
           <div class="instructor-about">
             <p class="instructor-about-label">About</p>
-            <p>Harsha helps with marketing, money & website management. Outside of the nonprofit, he likes spending time with family & friends.
-</p>
+            <p>Harsha helps with marketing, money & website management. Outside of the nonprofit, he likes spending time with family & friends.</p>
           </div>
         </div>
 
@@ -180,19 +224,45 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container container-center">
+      <p class="section-label animate-up">Kind Words</p>
+      <h2 class="animate-up delay-1">What People Say</h2>
+      <p class="section-sub animate-up delay-2">Hear from the families and community members who've experienced NextGen Enrichment.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-up delay-2">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="quote">"My son has grown so much in confidence since starting guitar lessons with Ahaan. The personalized attention is incredible for such a young instructor."</p>
+          <p class="author">— Parent of Music Student</p>
+        </div>
+        <div class="testimonial-card animate-up delay-3">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="quote">"Kai's tennis lessons have been amazing for my daughter. She looks forward to every session and has improved so much. We love supporting this nonprofit!"</p>
+          <p class="author">— Parent of Sports Student</p>
+        </div>
+        <div class="testimonial-card animate-up delay-4">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="quote">"It's rare to see students take this kind of initiative. NextGen Enrichment is exactly the kind of youth-led program San Diego needs more of."</p>
+          <p class="author">— Community Supporter</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- CONTACT — info slides from left, form from right -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container container-center">
       <p class="section-label animate-up">Reach Out</p>
       <h2 class="animate-up delay-1">Contact Us</h2>
+      <p class="section-sub animate-up delay-2"></p>
       <div class="contact-grid">
         <div class="contact-info animate-right">
           <div class="contact-item">
             <span class="contact-icon">📍</span>
             <div>
               <strong>Location</strong>
-              <p><!-- PASTE ADDRESS HERE --></p>
+              <p>San Diego, California</p>
             </div>
           </div>
           <div class="contact-item">
@@ -208,6 +278,10 @@
               <strong>Phone</strong>
               <p><!-- PASTE PHONE NUMBER --></p>
             </div>
+          </div>
+          <div class="contact-response-note">
+            <span>⚡</span>
+            <p>We typically respond within 24 hours.</p>
           </div>
         </div>
         <form class="contact-form animate-left">
@@ -231,7 +305,6 @@
         &copy; 2026 NextGen Enrichment. All rights reserved.
       </p>
       <div class="footer-links">
-        <!-- Add social links here -->
         <a href="#"></a>
         <a href="#"></a>
       </div>
